@@ -19,5 +19,9 @@ jobs:
           script: |
             cd /home/ubuntu/user-menagement
             git pull origin main
+
+            chmod +x mvnw
+            ./mvnw clean package -DskipTests
+
             docker-compose down
             docker-compose up -d --build
