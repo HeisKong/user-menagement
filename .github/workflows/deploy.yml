@@ -20,6 +20,7 @@ jobs:
             cd /home/ubuntu/user-menagement
             git pull origin main
 
+            export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
             chmod +x mvnw
             ./mvnw clean package -DskipTests
 
